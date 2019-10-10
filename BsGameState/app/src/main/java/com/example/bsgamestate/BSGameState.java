@@ -20,6 +20,7 @@ public class BSGameState {
     private GamePlayer player2;
 
 
+
     public BSGameState() {
         this.playerTurn=1;
         this.p1TotalHits=0;
@@ -75,6 +76,26 @@ public class BSGameState {
 
     public void setPlayerTurn(int playerTurn) {
         this.playerTurn = playerTurn;
+    }
+
+    /** fire method: take board as parameter & fire on selected coordinates, return true if successful fire **/
+    public boolean fire(String[][] bsBoard){
+        return false; // default return value
+    }
+
+    /** placeShip method: place a ship using given coordinates, return true if ship is placed successfully **/
+    public boolean placeShip(int playerID, int shipType, String xCoord, String yCoord, BSGameState gameState){
+        return false; // default return value
+    }
+
+    /** newGame method: to start a new game, return true if successful **/
+    public boolean newGame(BSGameState gameState){
+        return false; //default return value
+    }
+
+    /** quitGame method: to exit the game at any point, return true if successful**/
+    public boolean quitGame(BSGameState gameState){
+        return false; //default return value
     }
 
 
