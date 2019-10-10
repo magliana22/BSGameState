@@ -20,55 +20,104 @@ public class BSGameState {
     private GamePlayer player2;
 
 
+    // kyle's variables
+    // should be in ship
+    private int carrier = 5;
+    private int battleShip = 4;
+    private int cruiser = 3;
+    private int submariner = 3;
+    private int destroyer = 2;
+
+
     public BSGameState() {
-        this.playerTurn = 1;
-        this.p1TotalHits = 0;
-        this.p2TotalHits = 0;
-        this.shipsAlive = 10;
-        this.shipsSunk = 0;
-        this.isHit = false;
-        this.phaseOfGame = "SetUp";
-        this.shotLocations = null;
-        this.shipLocations = null;
-        this.shipType = 1;
-        this.board = new String[10][20];
-        this.player1 = new HumanPlayer;
-        this.player2 = new ComputerPlayer;
+        this.playerTurn=1;
+        this.p1TotalHits=0;
+        this.p2TotalHits=0;
+        this.shipsAlive=10;
+        this.shipsSunk=0;
+        this.isHit=false;
+        this.phaseOfGame="SetUp";
+        this.shotLocations=null;
+        this.shipLocations=null;
+        this.shipType=1;
+        this.board=new String[10][20];
+        this.player1=new HumanPlayer;
+        this.player2=new ComputerPlayer;
 
     }
 
-    public boolean rotate(int playerID, int shipType, String xCoord, String yCoord, BSGameState gameState) {
-        boolean valid = false;
-        if (playerID == gameState.getPlayerTurn()) {
-            switch (shipType) {
+
+    // Kyle's Copy Constructor
+    public BSGameState(BSGameState original)
+    {
+        this.playerTurn=1;
+        this.p1TotalHits=0;
+        this.p2TotalHits=0;
+        this.shipsAlive=10;
+        this.shipsSunk=0;
+        this.isHit=false;
+        this.phaseOfGame="SetUp";
+        this.shotLocations=null;
+        this.shipLocations=null;
+        this.shipType=1;
+        this.board=new String[10][20];
+
+        // copy the player-to-move information
+        HumanPlayer = original.HumanPlayer;
+        ComputerPlayer = original.ComputerPlayer;
+    }
+
+
+    // Getter for boat selected (Kyle)
+    public int getBoat(int shipType) {
+        if (shipType == 0){
+            return carrier;
+        }else if(shipType == 1){
+            return battleShip;
+        }else if(shipType == 2){
+            return cruiser;
+        }else if(shipType == 3){
+            return submarine;
+        }else if(shipType == 4){
+            return destroyer;
+        }
+    }
+
+    // Setter for boat selected (Kyle)
+    public int setBoat(int shipType, int ship) { return this.shipType; }
+
+  public boolean rotate(int playerID, int shipType, String xCoord, String yCoord, BSGameState gameState){
+        boolean valid=false;
+        if(playerID==gameState.getPlayerTurn()){
+            switch(shipType){
                 case 1: //code
-                    valid = true;
+                    valid=true;
                     break;
 
                 case 2: //code
-                    valid = true;
+                    valid=true;
                     break;
 
                 case 3: //code
-                    valid = true;
+                    valid=true;
                     break;
 
                 case 4: //code
-                    valid = true;
+                    valid=true;
                     break;
                 case 5: //code
-                    valid = true;
+                    valid=true;
                     break;
 
                 default: //code
-                    valid = false;
+                    valid=false;
                     break;
             }
         }
         return valid;
-    }
+  }
 
-
+    // 
     public int getPlayerTurn() {
         return this.playerTurn;
     }
@@ -77,6 +126,7 @@ public class BSGameState {
         this.playerTurn = playerTurn;
     }
 
+
     /**
      * fire method: take board as parameter & fire on selected coordinates, return true if successful fire
      **/
@@ -84,54 +134,4 @@ public class BSGameState {
         return false; // default return value
     }
 
-    /**
-     * placeShip method: place a ship using given coordinates, return true if ship is placed successfully
-     **/
-    public boolean placeShip(int playerID, int shipType, String xCoord, String yCoord, BSGameState gameState) {
-        return false; // default return value
-    }
-
-    /**
-     * newGame method: to start a new game, return true if successful
-     **/
-    public boolean newGame(BSGameState gameState) {
-        return false; //default return value
-    }
-
-    /**
-     * quitGame method: to exit the game at any point, return true if successful
-     **/
-    public boolean quitGame(BSGameState gameState) {
-        return false; //default return value
-    }
-
-
-    /** toString method: e describes the state of the game as a string **/
-    public boolean toString(BSGameState gameState) {
-        return false; //default return value
-    }
-
-    /** CheckIfValidLocation method; check if location is valid, return true if successful **/
-    public boolean CheckIfValidLocation(BSGameState gameState) {
-        return false; //default return value
-    }
-    /** Menu method; implement menu **/
-    public boolean implementMenu(BSGameState gameState) {
-        return false; //default return value
-    }
-    /** Exit game method; exit the game **/
-    public boolean exitGame(BSGameState gameState) {
-        return false; //default return value
-    }
-
-    /** Initialize 10 x 10 grid
-    int[][] grid = new int[10][10];
-
-    }
-
-
-
-
-
-
-
+}
