@@ -20,54 +20,53 @@ public class BSGameState {
     private GamePlayer player2;
 
 
-
     public BSGameState() {
-        this.playerTurn=1;
-        this.p1TotalHits=0;
-        this.p2TotalHits=0;
-        this.shipsAlive=10;
-        this.shipsSunk=0;
-        this.isHit=false;
-        this.phaseOfGame="SetUp";
-        this.shotLocations=null;
-        this.shipLocations=null;
-        this.shipType=1;
-        this.board=new String[10][20];
-        this.player1=new HumanPlayer;
-        this.player2=new ComputerPlayer;
+        this.playerTurn = 1;
+        this.p1TotalHits = 0;
+        this.p2TotalHits = 0;
+        this.shipsAlive = 10;
+        this.shipsSunk = 0;
+        this.isHit = false;
+        this.phaseOfGame = "SetUp";
+        this.shotLocations = null;
+        this.shipLocations = null;
+        this.shipType = 1;
+        this.board = new String[10][20];
+        this.player1 = new HumanPlayer;
+        this.player2 = new ComputerPlayer;
 
     }
 
-  public boolean rotate(int playerID, int shipType, String xCoord, String yCoord, BSGameState gameState){
-        boolean valid=false;
-        if(playerID==gameState.getPlayerTurn()){
-            switch(shipType){
+    public boolean rotate(int playerID, int shipType, String xCoord, String yCoord, BSGameState gameState) {
+        boolean valid = false;
+        if (playerID == gameState.getPlayerTurn()) {
+            switch (shipType) {
                 case 1: //code
-                    valid=true;
+                    valid = true;
                     break;
 
                 case 2: //code
-                    valid=true;
+                    valid = true;
                     break;
 
                 case 3: //code
-                    valid=true;
+                    valid = true;
                     break;
 
                 case 4: //code
-                    valid=true;
+                    valid = true;
                     break;
                 case 5: //code
-                    valid=true;
+                    valid = true;
                     break;
 
                 default: //code
-                    valid=false;
+                    valid = false;
                     break;
             }
         }
         return valid;
-  }
+    }
 
 
     public int getPlayerTurn() {
@@ -78,25 +77,61 @@ public class BSGameState {
         this.playerTurn = playerTurn;
     }
 
-    /** fire method: take board as parameter & fire on selected coordinates, return true if successful fire **/
-    public boolean fire(String[][] bsBoard){
+    /**
+     * fire method: take board as parameter & fire on selected coordinates, return true if successful fire
+     **/
+    public boolean fire(String[][] bsBoard) {
         return false; // default return value
     }
 
-    /** placeShip method: place a ship using given coordinates, return true if ship is placed successfully **/
-    public boolean placeShip(int playerID, int shipType, String xCoord, String yCoord, BSGameState gameState){
+    /**
+     * placeShip method: place a ship using given coordinates, return true if ship is placed successfully
+     **/
+    public boolean placeShip(int playerID, int shipType, String xCoord, String yCoord, BSGameState gameState) {
         return false; // default return value
     }
 
-    /** newGame method: to start a new game, return true if successful **/
-    public boolean newGame(BSGameState gameState){
+    /**
+     * newGame method: to start a new game, return true if successful
+     **/
+    public boolean newGame(BSGameState gameState) {
         return false; //default return value
     }
 
-    /** quitGame method: to exit the game at any point, return true if successful**/
-    public boolean quitGame(BSGameState gameState){
+    /**
+     * quitGame method: to exit the game at any point, return true if successful
+     **/
+    public boolean quitGame(BSGameState gameState) {
         return false; //default return value
     }
 
 
-}
+    /** toString method: e describes the state of the game as a string **/
+    public boolean toString(BSGameState gameState) {
+        return false; //default return value
+    }
+
+    /** CheckIfValidLocation method; check if location is valid, return true if successful **/
+    public boolean CheckIfValidLocation(BSGameState gameState) {
+        return false; //default return value
+    }
+    /** Menu method; implement menu **/
+    public boolean implementMenu(BSGameState gameState) {
+        return false; //default return value
+    }
+    /** Exit game method; exit the game **/
+    public boolean exitGame(BSGameState gameState) {
+        return false; //default return value
+    }
+
+    /** Initialize 10 x 10 grid
+    int[][] grid = new int[10][10];
+
+    }
+
+
+
+
+
+
+
