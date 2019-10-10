@@ -60,7 +60,7 @@ public class BSGameState {
         this.shotLocations=null;
         this.shipLocations=null;
         this.shipType=1;
-        this.board=new String[10][20];
+        this.board=new String[10][10];
 
         // copy the player-to-move information
         HumanPlayer = original.HumanPlayer;
@@ -84,7 +84,7 @@ public class BSGameState {
     }
 
     // Setter for boat selected (Kyle)
-    public int setBoat(int shipType, int ship) { return this.shipType; }
+    public void setBoat(Ship shipType, int ship) { return this.shipType; }
 
   public boolean rotate(int playerID, int shipType, String xCoord, String yCoord, BSGameState gameState){
         boolean valid=false;
@@ -117,11 +117,12 @@ public class BSGameState {
         return valid;
   }
 
-    // 
+    // gets which players turn it is
     public int getPlayerTurn() {
         return this.playerTurn;
     }
 
+    // sets current players turn
     public void setPlayerTurn(int playerTurn) {
         this.playerTurn = playerTurn;
     }
@@ -133,5 +134,62 @@ public class BSGameState {
     public boolean fire(String[][] bsBoard) {
         return false; // default return value
     }
+
+
+    /**
+     * placeShip method: place a ship using given coordinates, return true if ship is placed successfully
+     */
+    public boolean placeShip(int playerID, int shipType, String xCoord, String yCoord, BSGameState gameState) {
+        return false; // default return value
+    }
+
+    /**
+     * newGame method: to start a new game, return true if successful
+     **/
+    public boolean newGame(BSGameState gameState) {
+        return false; //default return value
+    }
+
+    /**
+     * quitGame method: to exit the game at any point, return true if successful
+     **/
+    public boolean quitGame(BSGameState gameState) {
+        return false; //default return value
+    }
+
+
+    /**
+     * toString method: e describes the state of the game as a string
+     **/
+    public boolean toString(BSGameState gameState) {
+        return false; //default return value
+    }
+
+
+    /**
+     * Menu method; implement menu
+     **/
+    public boolean implementMenu(BSGameState gameState) {
+        return false; //default return value
+    }
+
+
+    /**
+     * Exit game method; exit the game
+     **/
+    public boolean exitGame(BSGameState gameState) {
+        return false; //default return value
+    }
+
+
+    /**
+     * CheckIfValidLocation method; check if location is valid, return true if successful
+     **/
+    public boolean CheckIfValidLocation(BSGameState gameState) {
+        return false; //default return value
+    }
+
+
+
 
 }
