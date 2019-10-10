@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/BSGameState.iml" filepath="$PROJECT_DIR$/BSGameState.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/BsGameState/app/build/generated/source/buildConfig/androidTest/androidTest.iml" filepath="$PROJECT_DIR$/BsGameState/app/build/generated/source/buildConfig/androidTest/androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BsGameState/app/src/androidTest/androidTest1.iml" filepath="$PROJECT_DIR$/BsGameState/app/src/androidTest/androidTest1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BsGameState/app/build/generated/source/buildConfig/buildConfig.iml" filepath="$PROJECT_DIR$/BsGameState/app/build/generated/source/buildConfig/buildConfig.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BsGameState/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/bundle-manifest.iml" filepath="$PROJECT_DIR$/BsGameState/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/bundle-manifest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BsGameState/app/build/intermediates/merged_manifests/debug/debug.iml" filepath="$PROJECT_DIR$/BsGameState/app/build/intermediates/merged_manifests/debug/debug.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BsGameState/app/build/intermediates/merged_manifests/debugAndroidTest/debugAndroidTest.iml" filepath="$PROJECT_DIR$/BsGameState/app/build/intermediates/merged_manifests/debugAndroidTest/debugAndroidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BsGameState/app/src/main/main.iml" filepath="$PROJECT_DIR$/BsGameState/app/src/main/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BsGameState/app/src/test/test.iml" filepath="$PROJECT_DIR$/BsGameState/app/src/test/test.iml" />
->>>>>>> origin/master
+      <module fileurl="file://$PROJECT_DIR$/.idea/BSGameState.iml" filepath="$PROJECT_DIR$/.idea/BSGameState.iml" group="BSGameState" />
     </modules>
   </component>
 </project>

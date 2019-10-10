@@ -18,15 +18,7 @@ public class BSGameState {
     private String[][] board;
     private GamePlayer player1;
     private GamePlayer player2;
-
-
-    // kyle's variables
-    // should be in ship
-    private int carrier = 5;
-    private int battleShip = 4;
-    private int cruiser = 3;
-    private int submariner = 3;
-    private int destroyer = 2;
+    
 
 
     public BSGameState() {
@@ -47,7 +39,7 @@ public class BSGameState {
     }
 
 
-    // Kyle's Copy Constructor
+    // Copy Constructor
     public BSGameState(BSGameState original)
     {
         this.playerTurn=1;
@@ -68,7 +60,7 @@ public class BSGameState {
     }
 
 
-    // Getter for boat selected (Kyle)
+    // Getter for boat selected
     public int getBoat(int shipType) {
         if (shipType == 0){
             return carrier;
@@ -83,7 +75,7 @@ public class BSGameState {
         }
     }
 
-    // Setter for boat selected (Kyle)
+    // Setter for boat selected
     public void setBoat(Ship shipType, int ship) { return this.shipType; }
 
   public boolean rotate(int playerID, int shipType, String xCoord, String yCoord, BSGameState gameState){
