@@ -1,5 +1,15 @@
 package com.example.bsgamestate;
 
+/**
+ *
+ * @author Kyle Sanchez
+ * @author Gianni Magliana
+ * @author Daniel Co
+ * @author William Leung
+ *
+ */
+
+
 public class Ship {
 
     // Ship health

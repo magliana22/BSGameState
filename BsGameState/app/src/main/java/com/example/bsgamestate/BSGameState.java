@@ -1,5 +1,16 @@
 package com.example.bsgamestate;
 
+/**
+ *
+ * @author Kyle Sanchez
+ * @author Gianni Magliana
+ * @author Daniel Co
+ * @author William Leung
+ *
+ */
+
+
+
 public class BSGameState {
 
     private int p1TotalHits;
@@ -18,7 +29,7 @@ public class BSGameState {
     private String[][] board;
     private GamePlayer player1;
     private GamePlayer player2;
-    
+
 
 
     public BSGameState() {

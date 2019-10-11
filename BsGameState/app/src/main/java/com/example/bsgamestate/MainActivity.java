@@ -1,5 +1,16 @@
 package com.example.bsgamestate;
 
+
+/**
+ *
+ * @author Kyle Sanchez
+ * @author Gianni Magliana
+ * @author Daniel Co
+ * @author William Leung
+ *
+ */
+
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
