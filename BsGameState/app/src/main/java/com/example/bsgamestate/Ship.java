@@ -12,10 +12,19 @@ package com.example.bsgamestate;
 
 public class Ship {
 
-    // Ship health
-    private int carrier = 5;
-    private int battleShip = 4;
-    private int cruiser = 3;
-    private int submariner = 3;
-    private int destroyer = 2;
+    private int shipHealth;
+    private int shipHits;
+    private boolean isSunk;
+    private int xCoord;
+    private int yCoord;
+    private int owner;
+
+    public Ship(int xLocation, int yLocation, int idOfOwner, int shipSize){
+        this.xCoord=xLocation;
+        this.yCoord=yLocation;
+        this.owner=idOfOwner;
+        this.shipHealth=shipSize;
+        this.isSunk=false;
+    }
+
 }
